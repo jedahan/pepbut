@@ -9,8 +9,8 @@
 //! want. Please keep in mind that the API is at the whim of what we need for the DNS service
 //! project, and that support for record types is purposely limited.
 
-#![cfg_attr(feature = "cargo-clippy", warn(clippy_pedantic))]
-#![cfg_attr(feature = "cargo-clippy", allow(use_self, stutter))]
+#![cfg_attr(feature = "cargo-clippy", warn(clippy::pedantic))]
+#![cfg_attr(feature = "cargo-clippy", allow(clippy::use_self, clippy::stutter, clippy::non_ascii_literal))]
 
 extern crate bytes;
 extern crate cast;

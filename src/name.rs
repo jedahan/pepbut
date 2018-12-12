@@ -343,7 +343,7 @@ impl From<IpAddr> for Name {
     }
 }
 
-#[cfg_attr(feature = "cargo-clippy", allow(indexing_slicing))]
+#[cfg_attr(feature = "cargo-clippy", allow(clippy::indexing_slicing))]
 impl From<Ipv4Addr> for Name {
     fn from(addr: Ipv4Addr) -> Name {
         macro_rules! idx {
@@ -369,7 +369,7 @@ impl From<Ipv4Addr> for Name {
     }
 }
 
-#[cfg_attr(feature = "cargo-clippy", allow(indexing_slicing))]
+#[cfg_attr(feature = "cargo-clippy", allow(clippy::indexing_slicing))]
 impl From<Ipv6Addr> for Name {
     fn from(addr: Ipv6Addr) -> Name {
         macro_rules! idx {
